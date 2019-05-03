@@ -1,5 +1,8 @@
 # Barycentric Lagrange Interpolation
 
+ [![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/LaGuer/barycentricLagrangeInterpolation)
+ [![nbviewer](https://img.shields.io/badge/view%20on-nbviewer-brightgreen.svg)](https://nbviewer.jupyter.org/github/LaGuer/barycentricLagrangeInterpolation/blob/master/website-index.ipynb)
+ 
 ## What does this package provide?
 This package provides the functioalities to interpolate a one dimensional function known at some sampling points with a barycentric Lagrange method. Furthermore you can differentiate the interpolated function. Also higher derivatives are supported. All this functionality is implemented within a Python class in numpy. Plots are provided by matplotlib.
 
