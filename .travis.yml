@@ -53,6 +53,7 @@ jobs:
         - julia --project=@ -e 'import Pkg; Pkg.add("Measurements")'
         - julia --project=@ -e 'import Pkg; Pkg.add("Unitful")'
         - julia --project=@ -e 'import Pkg; Pkg.add("PyCall")'
+        - julia --project=@ -e 'import Pkg; Pkg.add("BarycentricInterpolation")'
         - julia --project=@ --color=yes -e 'using Pkg; Pkg.build()'
         - julia --project=@ -e 'import Pkg; Pkg.status()'
         - julia --project=@ -e 'import Pkg; Pkg.build()'
@@ -66,6 +67,7 @@ jobs:
         - julia -e 'import Pkg; Pkg.add("Measurements")'
         - julia -e 'import Pkg; Pkg.add("Unitful")'
         - julia --project=@ -e 'import Pkg; Pkg.add("PyCall")'
+        - julia --project=@ -e 'import Pkg; Pkg.add("BarycentricInterpolation")'
         - julia -e 'using Pkg; Pkg.instantiate()'
         - julia --code-coverage test/runtests.jl
         - julia -e 'using Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
